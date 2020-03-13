@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Person-CRUD</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="phone">Phone</string>
+    <string name="cross_image_content_description">Delete person from SQLite database</string>
+    <string name="update">Update</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="create_button">Create</string>
+    <string name="all_delete">All Delete</string>
+    <string name="edit_button_description">Edit Single person information</string>
+    <string name="gjinia">Gjinia</string>
+    <string name="femer">Femer</string>
+    <string name="save">Save</string>
+    <string name="emri">Emri</string>
+    <string name="mbiemri">Mbiemri</string>
+    <string name="datelindja">Datelindja</string>
+    <string name="vendlindja">Vendlindja</string>
+    <string name="gjendja_martesore">Gjendja Martesore</string>
+    <string name="i_punesuar">I Punesuar</string>
+    <string name="mashkull">Mashkull</string>
+    <string name="person_list_is_empty">Person List is Empty</string>
+
+    <string-array name="martial_status_arrays">
+        <item>I martuar</item>
+        <item>Beqare</item>
+        <item>I Ndare</item>
+        <item>ve</item>
+    </string-array>
+
+</resources>

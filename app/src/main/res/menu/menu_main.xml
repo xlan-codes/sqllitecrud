@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="softexpress.hekuran.sqlite_project.Features.PersonList.PersonListActivity">
+    <item
+        android:id="@+id/action_delete"
+        android:icon="@drawable/ic_delete_white_24dp"
+        android:title="@string/all_delete"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_search"
+        android:title="Search Person"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_search_category_default"/>
+</menu>

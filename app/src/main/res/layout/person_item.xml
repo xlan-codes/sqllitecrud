@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginRight="8dp"
+    android:padding="8dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:text="John Doe"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/editImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/crossImageView"
+        android:src="@drawable/ic_mode_edit_black_24dp"
+        android:alpha="0.5"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription="@string/edit_button_description"/>
+
+    <ImageView
+        android:id="@+id/crossImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/ic_delete_black_24dp"
+        android:alpha="0.5"
+        android:contentDescription="@string/cross_image_content_description" />
+
+    <TextView
+        android:id="@+id/vendlindja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vendlindja"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fullname" />
+
+    <TextView
+        android:id="@+id/vendlindjaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="100145"
+        app:layout_constraintTop_toBottomOf="@id/fullname"
+        app:layout_constraintLeft_toRightOf="@id/vendlindja"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"/>
+
+    <TextView
+        android:id="@+id/datelindja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/datelindja"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vendlindja" />
+
+    <TextView
+        android:id="@+id/birthdateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        app:layout_constraintLeft_toRightOf="@id/datelindja"
+        app:layout_constraintTop_toBottomOf="@id/vendlindja"
+        tools:text="12/12/2222" />
+
+    <TextView
+        android:id="@+id/phoneTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/datelindja"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/phone"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/phoneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="01559541265"
+        app:layout_constraintTop_toBottomOf="@id/datelindja"
+        app:layout_constraintLeft_toRightOf="@id/phoneTitle"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
